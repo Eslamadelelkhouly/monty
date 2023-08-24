@@ -8,15 +8,15 @@
 */
 void free_stack(stack_t *head)
 {
-	stack_t *temp;
+stack_t *temp;
 
-	temp = head;
-	while (head)
-	{
-		temp = head->next;
-		free(head);
-		head = temp;
-	}
+temp = head;
+while (head)
+{
+temp = head->next;
+free(head);
+head = temp;
+}
 }
 
 /**
@@ -28,7 +28,7 @@ void free_stack(stack_t *head)
 */
 void f_stack(stack_t **head, unsigned int counter)
 {
-	(void)head;
-	(void)counter;
-	bus.lifi = 0;
+(void)head;
+(void)counter;
+bus.lifi = 0;
 }
